@@ -1,12 +1,12 @@
 amfoss tasks
-# amFOSS Praveshan Tasks 2026 - Submission Ledger
+# amFOSS Praveshan Tasks 2026 -
 
 *   *Applicant Name:* [Darsana Arun]
-*   *Operating System Used:* Linux
+*   *Operating System Used:* Linux and Windows
 *   *Completed Tasks:* Task 00, Task 01, Task 03 (LeetCode), Task 09 (Matrix Multiplication)
 
 ---
-
+I am a beginner and I try to learn new things. I have made mistakes while doing the tasks, however those taught me things as well.
 ## 🧭 Personal Evaluation Questions
 
 ### 1. Tell us about a problem you've noticed around you that you would genuinely like to solve. Why does it matter?
