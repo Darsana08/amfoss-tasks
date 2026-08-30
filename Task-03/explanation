@@ -1,0 +1,34 @@
+explanation
+# Task 03: LeetCode Challenge
+
+This folder contains my solutions and architectural breakdowns for 5 LeetCode problems (1 Easy, 4 Medium) as part of the amFOSS evaluation criteria.
+
+## 🚀 Problem Breakdown & Strategy
+
+### 1. Palindrome Number (Easy)
+*   *Approach:* Instead of converting the integer to a string, I reversed the second half of the number mathematically using basic modulo (%) and division (//) operators, then compared it directly to the first half to save space.
+*   *Time Complexity:* $O(\log_{10} n)$ — The number of digits in the integer dictates the loop duration.
+*   *Space Complexity:* $O(1)$ — Only a few primitive integer tracking flags are used.
+
+### 2. Zigzag Conversion (Medium)
+*   *Approach:* Used a list of string rows representing the zigzag matrix rows. Traversed the input string while using a directional flag (step) to alternate moving down and up the rows sequentially.
+*   *Time Complexity:* $O(n)$ — Every individual character in the string is visited exactly once.
+*   *Space Complexity:* $O(n)$ — Extra list array space is allocated to map out the individual string row segments.
+
+### 3. Longest Palindromic Substring (Medium)
+*   *Approach:* Implemented the "Expand Around Center" technique. For each index positioning flag, I expanded outwards checking for matching character footprints for both odd and even palindrome lengths.
+*   *Time Complexity:* $O(n^2)$ — Finding potential matching boundaries from each index element requires a quadratic verification footprint.
+*   *Space Complexity:* $O(1)$ — Compares indices in place without generating extra sub-string copies.
+
+### 4. String to Integer - atoi (Medium)
+*   *Approach:* Implemented a robust state checking configuration. Handled whitespace trimming, polarity indicators (+ or -), numerical value conversions, and strict overflow/underflow handling constraints ($\pm2^{31} - 1$).
+*   *Time Complexity:* $O(n)$ — Parses the valid character segments sequentially up to termination.
+*   *Space Complexity:* $O(1)$ — Stores only the resulting accumulated value state flag.
+
+### 5. Reverse Integer (Medium)
+*   *Approach:* Popped digits sequentially from the back of the number using modulo base 10 and rebuilt it reversed. Carefully verified if the accumulated value drifted outside the standard 32-bit signed bounds before returning.
+*   *Time Complexity:* $O(\log_{10} n)$ — Directly bounded by the numerical digit footprint count.
+*   *Space Complexity:* $O(1)$ — Zero array memory footprints are used.
+
+## 💡 Review & Key Takeaways
+Through this challenge, I mastered boundary condition handling (such as integer overflows in 32-bit spaces) and optimization techniques like center expansion and mathematical digit extraction to avoid costly string operations.
